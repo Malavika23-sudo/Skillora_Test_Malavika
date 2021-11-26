@@ -111,6 +111,17 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   SizedBox(
+                    width: 10,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 20,
+                    child: Icon(
+                      Icons.search,
+                      color: Colors.white,
+                    ),
+                  ),
+                  SizedBox(
                     width: 30,
                   ),
                   Container(
@@ -152,6 +163,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   CircleAvatar(
                     backgroundColor: Colors.white,
                     radius: 20,
+                    child: ClipOval(
+                        child: Image.asset('assets/images/profile.jpg')),
                   ),
                   SizedBox(
                     width: width * .07,

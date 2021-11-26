@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:malavika_machine_test/constants/color_constants.dart';
 import 'package:malavika_machine_test/constants/style_constants.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -18,22 +19,21 @@ class ResortImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
       child: Row(
         children: [
           SizedBox(
-           width: 10,
+            width: 15,
           ),
           Container(
-            height: height * .08,
-            width: width * .1,
+            height: height * .15,
+            width: width * .23,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(15)),
                 image: DecorationImage(
                     fit: BoxFit.cover,
-                    image: AssetImage('assets/images/photo1.jpg'))),
-           
+                    image: AssetImage('assets/images/photo3.jpg'))),
           ),
           Column(
             children: [
@@ -59,7 +59,6 @@ class ResortImage extends StatelessWidget {
                       style: titlesmall,
                     ),
                   ),
-                  Spacer(),
                   Padding(
                     padding: const EdgeInsets.only(right: 20.0),
                     child: Text(
@@ -67,35 +66,35 @@ class ResortImage extends StatelessWidget {
                       style: titlesmall,
                     ),
                   ),
-                  Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 20.0),
-                        child: Icon(
-                          Icons.bedroom_child,
-                          color: Colors.white,
-                        ),
-                      ),
-                      Text('1'),
-                      SizedBox(
-                        width: 60,
-                      ),
-                      Icon(
-                        Icons.bathtub_outlined,
-                        color: Colors.white,
-                      ),
-                      Text('1'),
-                      SizedBox(
-                        width: 60,
-                      ),
-                      Icon(Icons.star, color: Colors.amber),
-                      Text('5.5'),
-                    ],
-                  )
                 ],
               ),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20.0),
+                    child: Icon(
+                      Icons.bedroom_child,
+                      color: Colors.white,
+                    ),
+                  ),
+                  Text('1'),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  Icon(
+                    Icons.bathtub_outlined,
+                    color: Colors.white,
+                  ),
+                  Text('1'),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  Icon(Icons.star, color: Colors.amber),
+                  Text('5.5'),
+                ],
+              )
             ],
-          ),
+          )
         ],
       ),
     );

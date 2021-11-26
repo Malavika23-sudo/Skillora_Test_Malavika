@@ -40,7 +40,7 @@ class BoatImages extends StatelessWidget {
                     borderRadius: BorderRadius.all(Radius.circular(15)),
                     image: DecorationImage(
                         fit: BoxFit.cover,
-                        image: AssetImage('assets/images/photo1.jpg'))),
+                        image: AssetImage('assets/images/photo2.jpg'))),
                 child: Padding(
                   padding: const EdgeInsets.only(left: 120.0, bottom: 100),
                   child: Icon(

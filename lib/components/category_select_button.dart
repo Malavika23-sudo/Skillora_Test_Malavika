@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:malavika_machine_test/components/resort_image_container.dart';
+import 'package:malavika_machine_test/components/test.dart';
 import 'package:malavika_machine_test/constants/color_constants.dart';
 import 'package:malavika_machine_test/constants/style_constants.dart';
 
@@ -116,12 +117,15 @@ class CategoryResort extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 10.0, top: 10),
       child: Container(
+        height: height * .2,
+        width: width * .85,
         child: ResortImage(
           height: height,
           width: width,
+          text1: text1,
+          text2: text2,
+          text3: text3,
         ),
-        height: height * .15,
-        width: width * .8,
         decoration: BoxDecoration(
             color: menuButtonColor,
             borderRadius: BorderRadius.all(Radius.circular(15))),

@@ -21,63 +21,66 @@ class RandomImages extends StatelessWidget {
         //     alignment: Alignment.topCenter,
         //     heightFactor: 0.5,
         //child:
-        Center(
-      child: Container(
-        height: height * .4,
-        width: width * .8,
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(15)),
-            image: DecorationImage(
-                fit: BoxFit.cover,
-                image: AssetImage('assets/images/photo1.jpg'))),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            Row(
-              children: [
-                Text(
-                  'House Boat',
-                  style: optionStyle,
-                ),
-                Spacer(),
-                Padding(
-                  padding: const EdgeInsets.only(right: 24.0),
-                  child: Icon(
-                    Icons.favorite,
-                    color: textColor,
+        Padding(
+      padding: const EdgeInsets.only(left: 20.0),
+      child: Center(
+        child: Container(
+          height: height * .4,
+          width: width * .8,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(15)),
+              image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: AssetImage('assets/images/photo1.jpg'))),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Row(
+                children: [
+                  Text(
+                    'House Boat',
+                    style: optionStyle,
                   ),
-                )
-              ],
-            ),
-            Row(
-              children: [
-                Container(
-                  margin: const EdgeInsets.all(15.0),
-                  padding: const EdgeInsets.all(3.0),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
-                      border: Border.all(
-                        color: textColor,
-                      )),
-                  child: Text(
-                    'Rs 1601/Person',
-                    style: titles,
+                  Spacer(),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 24.0),
+                    child: Icon(
+                      Icons.favorite,
+                      color: textColor,
+                    ),
+                  )
+                ],
+              ),
+              Row(
+                children: [
+                  Container(
+                    margin: const EdgeInsets.all(15.0),
+                    padding: const EdgeInsets.all(3.0),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                        border: Border.all(
+                          color: textColor,
+                        )),
+                    child: Text(
+                      'Rs 1601/Person',
+                      style: titles,
+                    ),
                   ),
-                ),
-                Spacer(),
-                Padding(
-                  padding: const EdgeInsets.only(right: 20.0),
-                  child: Text(
-                    'District 1',
-                    style: titles,
-                  ),
-                )
-              ],
-            ),
-          ],
+                  Spacer(),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 20.0),
+                    child: Text(
+                      'District 1',
+                      style: titles,
+                    ),
+                  )
+                ],
+              ),
+            ],
+          ),
+          //   ),
+          // ),
         ),
-        //   ),
-        // ),
       ),
     );
   }
