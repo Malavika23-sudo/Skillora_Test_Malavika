@@ -5,8 +5,8 @@ import 'package:malavika_machine_test/components/category_general.dart';
 import 'package:malavika_machine_test/components/category_select_button.dart';
 import 'package:malavika_machine_test/components/cerousel_images.dart';
 import 'package:malavika_machine_test/components/nearby_selector.dart';
-import 'package:malavika_machine_test/constants/color_constants.dart';
 import 'package:malavika_machine_test/constants/style_constants.dart';
+
 
 class Body extends StatelessWidget {
   final double height;
@@ -22,7 +22,7 @@ class Body extends StatelessWidget {
     return SingleChildScrollView(
       child: Container(
         padding: EdgeInsets.only(left: 20),
-        height: height * 2.5,
+        height: height * 3,
         width: width,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -32,30 +32,31 @@ class Body extends StatelessWidget {
               padding: const EdgeInsets.only(bottom: 20.0, top: 50),
               child: FirstSelector(height: height, width: width),
             ),
-            Center(
-              child: Padding(
-                padding: const EdgeInsets.only(right: 10.0),
-                child: SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    children: [
-                      RandomImages(
-                        height: height,
-                        width: width,
-                      ),
-                      RandomImages(
-                        height: height,
-                        width: width,
-                      ),
-                      RandomImages(
-                        height: height,
-                        width: width,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
+            TestSliderImage(),
+            // Center(
+            //   child: Padding(
+            //     padding: const EdgeInsets.only(right: 10.0),
+            //     child: SingleChildScrollView(
+            //       scrollDirection: Axis.horizontal,
+            //       child: Row(
+            //         children: [
+            //           RandomImages(
+            //             height: height,
+            //             width: width,
+            //           ),
+            //           RandomImages(
+            //             height: height,
+            //             width: width,
+            //           ),
+            //           RandomImages(
+            //             height: height,
+            //             width: width,
+            //           ),
+            //         ],
+            //       ),
+            //     ),
+            //   ),
+            // ),
             Padding(
               padding: const EdgeInsets.only(bottom: 20.0, top: 20),
               child: Text(

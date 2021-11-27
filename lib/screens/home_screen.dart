@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:malavika_machine_test/components/category_select_button.dart';
+import 'package:malavika_machine_test/components/cerousel_images.dart';
 import 'package:malavika_machine_test/constants/color_constants.dart';
-import 'package:malavika_machine_test/constants/style_constants.dart';
 import 'package:malavika_machine_test/screens/home_body.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -160,11 +159,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   SizedBox(
                     width: width * .41,
                   ),
-                  CircleAvatar(
-                    backgroundColor: Colors.white,
-                    radius: 20,
-                    child: ClipOval(
-                        child: Image.asset('assets/images/profile.jpg')),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SliderImage()));
+                    },
+                    child: CircleAvatar(
+                      backgroundColor: Colors.white,
+                      radius: 20,
+                      child: ClipOval(
+                          child: Image.asset('assets/images/profile.jpg')),
+                    ),
                   ),
                   SizedBox(
                     width: width * .07,

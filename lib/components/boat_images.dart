@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:malavika_machine_test/constants/color_constants.dart';
 import 'package:malavika_machine_test/constants/style_constants.dart';
-import 'package:carousel_slider/carousel_slider.dart';
+
 
 class BoatImages extends StatelessWidget {
   final double height;

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:malavika_machine_test/components/resort_image_container.dart';
-import 'package:malavika_machine_test/components/test.dart';
 import 'package:malavika_machine_test/constants/color_constants.dart';
 import 'package:malavika_machine_test/constants/style_constants.dart';
 
